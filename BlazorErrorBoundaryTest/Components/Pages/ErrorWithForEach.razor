@@ -1,0 +1,14 @@
+﻿@page "/error-with-foreach"
+
+<PageTitle>Counter</PageTitle>
+
+<h1>Page without foreach</h1>
+
+@{
+    var items = new[] { 1, 2 };
+}
+
+@foreach (var item in items)
+{
+    <SubComponent />
+}
